@@ -8,7 +8,9 @@ on:
     - cron: "0 23 * * *" # Runs at 03:00 AM (UTC) every day (Check https://crontab.guru/)
 
 jobs:
-  Standard:
+  zotero-to-readwise-automation:
+    environment:
+      "Standard"
     runs-on: ubuntu-latest
     steps:
       - name: 🍽️ Checkout the repo
